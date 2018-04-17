@@ -1,0 +1,72 @@
+.home {
+  display: inline-block;
+  position: relative;
+  width: 90vw;
+  height: 100vh;
+  padding: 100px;
+  margin-left: 10vw;
+  vertical-align: top;
+  background-color: $white;
+  color: $dark;
+  @media only screen and (max-width: 425px) {
+    margin-left: 10vw;
+    padding-left: 0;
+    height: 80vh;
+  }
+
+  h1 {
+    font-family: $playfair;
+    font-weight: $bold;
+    font-size: 12vh;
+    color: $orange;
+    @media only screen and (max-width: 425px) {
+      font-size: 10vh;
+    }
+  }
+
+  h2 {
+    font-family: $playfair;
+    font-weight: $regular;
+    font-size: 8vh;
+    margin-bottom: 3vh;
+    @media only screen and (max-width: 425px) {
+      font-size: 6vh;
+    }
+  }
+
+  .more {
+    display: block;
+    width: 100%;
+    margin-top: 50vh;
+    text-align: center;
+    font-family: $raleway;
+    font-weight: $semibold;
+    font-size: 2vh;
+    cursor: pointer;
+    @media only screen and (max-width: 425px) {
+      display: none;
+    }
+
+    .more-text {
+      text-decoration: none;
+      transition: margin 0.3s ease;
+    }
+
+    .bar {
+      display: inline-block;
+      vertical-align: middle;
+      height: 1px;
+      width: 60px;
+      border: 1px solid $dark;
+    }
+  }
+
+  .more:hover {
+    .more-text {
+      color: $orange;
+      margin-right: 20px;
+      margin-left: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+}

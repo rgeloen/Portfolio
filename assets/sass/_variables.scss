@@ -1,0 +1,25 @@
+// COLORS
+$orange: #FFC000;
+$white: #fefefe;
+$dark: #000000;
+$playfair: 'Playfair Display', serif;
+$raleway: 'Raleway', sans-serif;
+$bold: 700;
+$semibold: 600;
+$regular: 400;
+$light: 300;
+
+%big-title {
+  font-family: $playfair;
+  font-weight: $bold;
+  font-size: 8vh;
+  color: $orange;
+  margin-bottom: 10vh;
+}
+
+%medium-title {
+  font-family: $raleway;
+  font-size: 5vh;
+  margin-bottom: 5vh;
+  font-weight: $semibold;
+}

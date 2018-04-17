@@ -1,0 +1,237 @@
+.nav {
+  display: inline-block;
+  position: fixed;
+  width: 120px;
+  height: 100vh;
+  background-color: $dark;
+  transition: width 0.5s;
+  z-index: 999;
+  overflow: hidden;
+  cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    width: 80px;
+  }
+  @media only screen and (max-width: 425px) {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    padding: 3%;
+    background-color: $dark;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: height 0.5s;
+  }
+
+  .hamburger-bloc {
+    display: inline-block;
+    height: 100vh;
+    width: 120px;
+    @media only screen and (max-width: 425px) {
+      width: 100%;
+      height: 10vh;
+      text-align: center;
+    }
+
+    .hamburger {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 45px;
+      cursor: pointer;
+      @media only screen and (max-width: 768px) {
+        left: 20px;
+      }
+      @media only screen and (max-width: 425px) {
+        position: inherit;
+      }
+
+      .bars {
+        width: 35px;
+        height: 5px;
+        background-color: $white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+      background-color: $orange;
+      transition: 0.4s;
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+      background-color: $orange;
+      transition: 0.4s;
+    }
+  }
+
+  .menu-content {
+    display: none;
+  }
+}
+
+.nav.active {
+  width: 100vw;
+  transition: width 0.5s;
+  @media only screen and (max-width: 425px) {
+    height: 100vh;
+    transition: height 0.5s;
+  }
+
+  .menu-content {
+    display: inline-block;
+    vertical-align: top;
+    padding: 100px 0 0 150px;
+    margin-right: 10vw;
+    @media only screen and (max-width: 425px) {
+      padding-top: 50px;
+      padding-left: 0;
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      text-decoration: none;
+      font-family: $raleway;
+      font-weight: $bold;
+      color: $white;
+      font-size: 12vh;
+      transition: all ease-in-out 0.4s;
+      margin-bottom: 7vh;
+      cursor: pointer;
+      @media only screen and (max-width: 425px) {
+        display: block;
+        font-size: 10vh;
+      }
+    }
+
+    a:hover {
+      color: $orange;
+      transition: all ease-in-out 0.4s;
+    }
+  }
+
+  .menu-resume {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12vh;
+    background-color: $orange;
+    width: 40vw;
+    height: 60vh;
+    padding: 50px;
+    @media only screen and (max-width: 425px) {
+      display: none;
+    }
+
+    h1 {
+      font-family: $playfair;
+      font-weight: $semibold;
+      font-size: 5vh;
+      margin-bottom: 3vh;
+    }
+
+    p {
+      font-family: $raleway;
+      font-weight: $light;
+      font-size: 2vh;
+      line-height: 27px;
+      margin-bottom: 3vh;
+
+      a {
+        color: $dark;
+        text-decoration: none;
+        border-bottom: 2px solid $dark;
+        cursor: pointer;
+        padding-bottom: 2px;
+        transition: all 0.2s;
+      }
+
+      a:hover {
+        color: $white;
+        padding-bottom: 4px;
+        transition: all 0.2s;
+      }
+    }
+
+    span {
+      display: block;
+      font-family: $raleway;
+      font-weight: $regular;
+      font-size: 2vh;
+      margin-bottom: 2vh;
+
+      a {
+        color: $dark;
+        text-decoration: none;
+        border-bottom: 2px solid $dark;
+        cursor: pointer;
+        padding-bottom: 2px;
+        transition: all 0.2s;
+      }
+
+      a:hover {
+        color: $white;
+        padding-bottom: 4px;
+        transition: all 0.2s;
+      }
+    }
+
+    .social {
+      display: block;
+      text-align: left;
+      margin-top: 30px;
+
+      span {
+        display: block;
+        font-family: $raleway;
+        font-weight: $regular;
+        font-size: 2vh;
+      }
+
+      a {
+        margin-right: 30px;
+        transition: all 0.2s;
+
+        .fa-twitter {
+          transition: all 0.2s;
+        }
+
+        .fa-behance {
+          transition: all 0.2s;
+        }
+
+        .fa-github {
+          transition: all 0.2s;
+        }
+      }
+
+      a:hover {
+        .fa-twitter {
+          color: $white;
+          transition: all 0.2s;
+        }
+
+        .fa-behance {
+          color: $white;
+          transition: all 0.2s;
+        }
+
+        .fa-github {
+          color: $white;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+}

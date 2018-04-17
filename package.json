@@ -1,0 +1,19 @@
+{
+  "name": "Folio",
+  "version": "1.0.0",
+  "description": "Raphael Geloen Folio",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass --source-map true -w assets/sass/style.scss assets/css/style.css",
+    "prod": "node-sass --output-style compressed --source-map true assets/sass/style.scss assets/css/style.min.css"
+  },
+  "author": "Raphael Geloen",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}
