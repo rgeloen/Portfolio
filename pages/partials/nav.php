@@ -16,7 +16,7 @@
     <h1>Resume...</h1>
     <p>Hey ! I'm Raphael Geloen, digital student in Paris. I study at <a href="https://www.hetic.net/" target="_blank"> Hetic</a>, a multidisciplinary school on the digital professions. I'm trying to improve especially my development skills, but I keep an interest on all kind of design, and still love doing graphic productions with a good coffee !</p>
     <span>Feel free to check <a href="./assets/images/cv.pdf">my resume.</a></span>
-    <span>Make it social and <a href="#">contact me !</a></span>
+    <span>Make it social and <a href="#contact" onclick="menuToggle(this)">contact me !</a></span>
     <div class="social">
       <span>You can also find me on : </span>
       <a href="https://twitter.com/R_Gln?lang=fr" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>

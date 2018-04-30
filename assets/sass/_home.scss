@@ -14,24 +14,33 @@
     height: 80vh;
   }
 
-  h1 {
-    font-family: $playfair;
-    font-weight: $bold;
-    font-size: 12vh;
-    color: $orange;
-    @media only screen and (max-width: 425px) {
-      font-size: 10vh;
+  .title {
+    opacity: 0;
+
+    h1 {
+      font-family: $playfair;
+      font-weight: $bold;
+      font-size: 12vh;
+      color: $orange;
+      @media only screen and (max-width: 425px) {
+        font-size: 10vh;
+      }
+    }
+
+    h2 {
+      font-family: $playfair;
+      font-weight: $regular;
+      font-size: 8vh;
+      margin-bottom: 3vh;
+      @media only screen and (max-width: 425px) {
+        font-size: 6vh;
+      }
     }
   }
 
-  h2 {
-    font-family: $playfair;
-    font-weight: $regular;
-    font-size: 8vh;
-    margin-bottom: 3vh;
-    @media only screen and (max-width: 425px) {
-      font-size: 6vh;
-    }
+  .title.ready {
+    opacity: 1;
+    transition: 1s all;
   }
 
   .more {

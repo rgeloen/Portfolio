@@ -1,6 +1,8 @@
-const loader = document.querySelector('.loader')
-const loaderTitle = document.querySelector('.loader-title')
 const $body = document.querySelector('body')
+const loaderDiv = document.querySelector('.loader')
+const loaderTitle = document.querySelector('.loader-title')
+const home = document.querySelector('.home')
+const homeTitle = home.querySelector('.title')
 
 let loaderText = 0;
 
@@ -12,12 +14,16 @@ const increment = () => {
       loaderTitle.classList.add('ready')
       loaderTitle.innerText = "Ready !"
       const loaderSwipe = setTimeout(function(){
-        loader.classList.add('ready')}
+        loaderDiv.classList.add('ready')}
       , 800)
       const loaderExit = setTimeout(function() {
-        loader.style.display = 'none'}
+        loaderDiv.style.display = 'none'}
+      ,1800)
+      const hometitleAppear = setTimeout(function() {
+        homeTitle.classList.add('ready')}
       ,1800)
       document.body.style.overflow = 'auto';
+
   }
 }
 const interval = setInterval(increment, 30)

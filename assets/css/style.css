@@ -45,8 +45,11 @@ body {
     transition: opacity 1.2s; }
 
 .loader.ready {
-  width: 10vw;
+  width: 120px;
   transition: width 1s; }
+  @media only screen and (max-width: 768px) {
+    .loader.ready {
+      width: 80px; } }
   @media only screen and (max-width: 425px) {
     .loader.ready {
       width: 0;
@@ -143,7 +146,7 @@ body {
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       color: #fefefe;
-      font-size: 12vh;
+      font-size: 10vh;
       transition: all ease-in-out 0.4s;
       margin-bottom: 7vh;
       cursor: pointer; }
@@ -247,22 +250,27 @@ body {
       margin-left: 10vw;
       padding-left: 0;
       height: 80vh; } }
-  .home h1 {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    font-size: 12vh;
-    color: #FFC000; }
-    @media only screen and (max-width: 425px) {
-      .home h1 {
-        font-size: 10vh; } }
-  .home h2 {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-size: 8vh;
-    margin-bottom: 3vh; }
-    @media only screen and (max-width: 425px) {
-      .home h2 {
-        font-size: 6vh; } }
+  .home .title {
+    opacity: 0; }
+    .home .title h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 12vh;
+      color: #FFC000; }
+      @media only screen and (max-width: 425px) {
+        .home .title h1 {
+          font-size: 10vh; } }
+    .home .title h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 8vh;
+      margin-bottom: 3vh; }
+      @media only screen and (max-width: 425px) {
+        .home .title h2 {
+          font-size: 6vh; } }
+  .home .title.ready {
+    opacity: 1;
+    transition: 1s all; }
   .home .more {
     display: block;
     width: 100%;
