@@ -8,14 +8,14 @@
   </div>
   <div class="menu-content">
     <a href="#home" onclick="menuToggle(this)">Home</a>
-    <a href="#projects" onclick="menuToggle(this)">Projects</a>
     <a href="#about" onclick="menuToggle(this)">About</a>
+    <a href="#projects" onclick="menuToggle(this)">Projects</a>
     <a href="#contact" onclick="menuToggle(this)">Contact</a>
   </div>
   <div class="menu-resume">
     <h1>Resume...</h1>
     <p>Hey ! I'm Raphael Geloen, digital student in Paris. I study at <a href="https://www.hetic.net/" target="_blank"> Hetic</a>, a multidisciplinary school on the digital professions. I'm trying to improve especially my development skills, but I keep an interest on all kind of design, and still love doing graphic productions with a good coffee !</p>
-    <span>Feel free to check <a href="./assets/images/cv.pdf">my resume.</a></span>
+    <span>Feel free to check <a href="./assets/images/cv.pdf"  target="_blank">my resume.</a></span>
     <span>Make it social and <a href="#contact" onclick="menuToggle(this)">contact me !</a></span>
     <div class="social">
       <span>You can also find me on : </span>
